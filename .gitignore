@@ -1,0 +1,30 @@
+# Root-level ignores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node
+node_modules/
+**/node_modules/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+
+# Environments
+.env
+.env.*
+*/env/
+*/venv/
+
+# Next.js
+**/.next/
+**/dist/
+**/out/
+
+# Django
+db.sqlite3
+**/local_settings.py
+**/staticfiles/
+**/media/
