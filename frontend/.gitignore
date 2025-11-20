@@ -39,3 +39,82 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# ============================================
+# Django & Python
+# ============================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+
+# Environment variables
+.env
+*.env
+
+# Django local settings
+local_settings.py
+settings_local.py
+
+# Database (SQLite)
+db.sqlite3
+db.sqlite3-journal
+
+# Uploaded media
+media/
+MEDIA/
+
+# Static files (collected)
+staticfiles/
+static/
+static-root/
+
+# Gunicorn logs
+gunicorn-error.log
+
+# ============================================
+# Logs & Cache
+# ============================================
+*.log
+*.pot
+*.pyc
+*.mo
+*.pid
+*.seed
+*.coverage
+*.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.cache/
+pytest_cache/
+
+# ============================================
+# IDE / Editor
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Migrations (OPTIONAL — uncomment to ignore)
+# ============================================
+*/migrations/*
+!*/migrations/__init__.py
+
