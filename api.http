@@ -1,0 +1,12 @@
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+"username":"admin",
+"password":"1"
+}
+
+###
+GET http://127.0.0.1:8000/auth/users/me/  HTTP/1.1
+Authorization: Token 042a01c5b2792046475ffa0bfcdf4503cefde835
+
