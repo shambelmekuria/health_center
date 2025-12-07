@@ -28,3 +28,6 @@ db.sqlite3
 **/local_settings.py
 **/staticfiles/
 **/media/
+.venv
+migrations/
+__pycache__/

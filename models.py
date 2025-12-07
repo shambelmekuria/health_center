@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 
-class Anc (models.Model):
+class ANCVisit(models.Model):
     name = models.CharField(_("Name"), max_length=255)
     mrn = models.CharField(_("MRN"), max_length=100) # Medical Record Number
     card_payment = models.DecimalField(
@@ -37,8 +37,8 @@ class Anc (models.Model):
     total_payment = models.DecimalField(
         _("Total"), max_digits=8, decimal_places=2, default=0, editable=False
     )
-    created_at = models.DateTimeField(_("Register Date"), auto_now_add=True)
-    updated_at = models.DateTimeField(_("Last Update"), auto_now=True)
+    created_at = models.DateField(_("Register Date"), auto_now_add=True)
+    updated_at = models.DateField(_("Last Update"), auto_now=True)
     
     @property
     def total(self):

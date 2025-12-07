@@ -17,3 +17,6 @@ Content-Type: application/json
 {
 "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NDczMzU2LCJpYXQiOjE3NjQ0NzMwNTYsImp0aSI6ImVkOTdhMjVmNmE4YTQ2Yzc4ZGJmMDZiYzdlMTUzZmUyIiwidXNlcl9pZCI6IjEiLCJpc19zdGFmZiI6dHJ1ZSwiaXNfYWN0aXZlIjp0cnVlLCJyb2xlIjoiY2FzaGllciIsInVzZXJuYW1lIjoiYWRtaW4iLCJmdWxsX25hbWUiOiJTaGFtYmVsIE1la3VyaXlhIn0.LL35edvLdi6daMabGrhX2LJCdFqJJ7CU1x_sz8pHgzE"
 }
+
+###
+GET http://127.0.0.1:8000/api/anc/dashboard

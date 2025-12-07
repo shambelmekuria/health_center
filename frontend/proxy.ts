@@ -50,9 +50,7 @@ export async function proxy(request: NextRequest) {
   return NextResponse.next()
 }
 
-// Alternatively, you can use a default export:
-// export default function proxy(request: NextRequest) { ... }
 
 export const config = {
-  matcher: ['/about/:path*', '/test', '/login', '/admin/:path*', '/cashier/:path*', '/dashboard','/']
+  matcher: ['/about/:path*', '/test', '/login','/logout', '/admin/:path*', '/cashier/:path*', '/dashboard','/']
 }

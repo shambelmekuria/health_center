@@ -26,6 +26,12 @@ import { useState } from "react"
 import { useAuth } from "./providers/auth-provider"
 import { getToken } from "@/app/lib/auth"
 
+type JwtPayload = {
+  id: string,
+  username: string,
+  role: string
+}
+
 
 const formSchema = z.object({
   username: z

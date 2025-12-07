@@ -5,7 +5,6 @@ import {
 } from "@/app/lib/auth";
 import axios from "axios";
 import { NextResponse } from "next/server";
-import { cookies } from "next/headers";
 
 const LOGIN_URL = `${DJANGO_BASE_URL}/api/token/`;
 export async function POST(request: Request) {
@@ -13,6 +12,7 @@ export async function POST(request: Request) {
   try {
     const response = await axios.post(LOGIN_URL, data);
     const { access, refresh } = response.data;
+     
     await setToken(access);
     await setRefreshToken(refresh);
     return NextResponse.json({ login: true }, { status: 200 });
