@@ -1,8 +1,13 @@
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
+from django.core.validators import MinValueValidator
+from django.core.exceptions import ValidationError
 
 # Create your models here.
+def validate_payment(value):
+    if value<0:
+        raise ValidationError('Payment must be positive.')
 
 class Anc (models.Model):
     name = models.CharField(_("Name"), max_length=255)
@@ -11,6 +16,7 @@ class Anc (models.Model):
         _("Card Payment"),
         max_digits=8,
         decimal_places=2,
+        validators=[validate_payment]
     )
     laboratory = models.DecimalField(
         _("Laboratory Payment"), max_digits=8, decimal_places=2, blank=True, null=True
